@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FINDINN - A Responsive Real Estate HTML Template">
+    <meta name="author" content="codeglamor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINDINN - A Responsive Real Estate HTML Template</title>
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- Nice Select -->       
+    <link rel="stylesheet" href="assets/css/nice-select.css">    
+    <!-- Venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>  
+        <!-- Preloader -->
+        <div class="loader_bg">
+          <div class="loader"></div>
+      </div>
+    <!-- Top-Header -->
+    <div class="top-header3 py-2 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="top-header3-link1">
+                        <a class="color-white mr-2" href="tel:111222333"><i class="fal fa-phone-alt mr-2"></i>111-222-333</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="top-header3-right-area justify-content-end d-flex">
+                        <div class="top-header3-dropdowns d-flex">
+                            <div class="top-header3-dropdown d-flex">
+                                <span class="top-header3-dropdown-icon"><i class="fal fa-globe color-white"></i></span>
+                                <select>
+                                    <option value="">Language</option>
+                                    <option value="English">English</option>
+                                    <option value="French">French</option>
+                                    <option value="Espanish">Espanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </div>
+
+                            <div class="top-header3-dropdown d-flex">
+                                <span class="top-header3-dropdown-icon"><i class="color-white fal fa-money-bill-alt"></i></span>
+                                <select>
+                                    <option value="">Currency</option>
+                                    <option value="USD">USD</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="EURO">EURO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="top-header3-link2">
+                            <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="fal fa-sign-in-alt mr-2"></i>Login or Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="nav-colored navbar navbar-expand-lg navbar-light" id="mynavbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo-dark.png" class="img-fluid" alt="logo"></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-bar-icon color-white"><i class="fas fa-bars"></i></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="grid-v1.html">Properties</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blogs-list1.html">Blogs</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#home1-testimonial">Testimonials</a>
+                  </li>
+              </ul>
+              <span class="nav-btn ml-2">
+                <a class="btn" href="contact-page.html">Contact Now</a>
+              </span>
+            </div>
+          </div>
+    </nav>
+  </header>
+
+    <!-- Login & Signup Modal -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content radius">
+                <div class="signup-login">
+                    <div class="login-form">
+                        <div class="login-form-heading mb-4 text-center">
+                              <h4 class="bold">Login to your account</h4>
+                              <p class="d-flex justify-content-center">if you don't have an account<a href="#" data-target=".signup-login" data-show=".signup-form" class="ml-1 show bold">Create an Account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="form-group relative">
+                                  <input class="form-control" type="email" placeholder="Email" required>
+                                  <span><i class="fas fa-lock"></i></span>
+                              </div>
+                              <div class="form-group relative">
+                                  <input class="form-control" type="password" placeholder="Password" required>
+                                  <span><i class="fas fa-key"></i></span>
+                              </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox">
+                                  <p class="align">Remember Me!</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Login</button>
+                          </form>
+                      </div>
+    
+                      <div class="signup-form hide">
+                        <div class="signup-form-heading mb-4 text-center">
+                              <h4 class="bold">Create your account</h4>
+                              <p class="d-flex justify-content-center">Already have an account?<a href="#" data-target=".signup-login" data-show=".login-form" class="ml-1 show bold">Login to your account</a></p>
+                          </div>
+                          <form method="POST">
+                              <div class="signup-form-name-boxes d-flex">
+                                <div class="form-group w-100 relative">
+                                    <input class="form-control" type="text" placeholder="First Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                                <div class="form-group w-100 ml-2 relative">
+                                    <input class="form-control" type="text" placeholder="Last Name" required>
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                </div>
+                              </div>
+                              <div class="form-group relative">
+                                <input class="form-control" type="email" placeholder="Your Email" required>
+                                <span><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                            <div class="form-group relative">
+                                <input class="form-control" type="password" placeholder="Repeat Password" required>
+                                <span><i class="fas fa-key"></i></span>
+                            </div>
+                              <div class="form-group d-flex relative">
+                                  <input class="remember-me-checkbox form-control mr-2" type="checkbox" required>
+                                  <p class="align">I agree to Terms & Conditions</p>
+                              </div>
+                              <button type="submit" class="w-100 btn">Sign Up</button>
+                          </form>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Blog list1 Section -->
+
+  <section id="blog-list1" class="pb-70">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-12">
+                <div class="blog4 mb-30">
+                    <div class="blog4-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="blog4-textarea pt-3">
+                        <p class="color-red">Apartment</p>
+                        <a href="grid-v4.html" class="blog4-heading">This is a standard post</a>
+                        <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officiis in sequi voluptatibus commodi modi voluptate a provident, iusto perferendis corporis debitis eveniet eaque dolorum officia laboriosam, omnis atque quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nemo placeat deserunt repudiandae excepturi sequi error aliquam mollitia magni pariatur labore voluptatem rem, voluptate similique beatae? Debitis ipsa ipsum eius? <a href="single-post.html">Read More</a></p>
+                        <div class="blog4-footer d-flex justify-content-between">
+                            <div class="blog4-user d-flex w-100">
+                                <img src="assets/images/blog4-user.png" alt="img">
+                                <p class="align ml-1">Ali Asif</p>
+                            </div>
+                            <p class="w-100 align text-right">3 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog4 mb-30">
+                    <div class="blog4-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="blog4-textarea pt-3">
+                        <p class="color-red">Apartment</p>
+                        <a href="grid-v4.html" class="blog4-heading">Luxury Villa at low Price</a>
+                        <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officiis in sequi voluptatibus commodi modi voluptate a provident, iusto perferendis corporis debitis eveniet eaque dolorum officia laboriosam, omnis atque quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nemo placeat deserunt repudiandae excepturi sequi error aliquam mollitia magni pariatur labore voluptatem rem, voluptate similique beatae? Debitis ipsa ipsum eius? <a href="single-post.html">Read More</a></p>
+                        <div class="blog4-footer d-flex justify-content-between">
+                            <div class="blog4-user d-flex w-100">
+                                <img src="assets/images/blog4-user.png" alt="img">
+                                <p class="align ml-1">Nomi Vin</p>
+                            </div>
+                            <p class="w-100 align text-right">9 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog4 mb-30">
+                    <div class="blog4-img relative">
+                        <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+                    <div class="blog4-textarea pt-3">
+                        <p class="color-red">Apartment</p>
+                        <a href="grid-v4.html" class="blog4-heading">Neat and Clean Rooms</a>
+                        <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officiis in sequi voluptatibus commodi modi voluptate a provident, iusto perferendis corporis debitis eveniet eaque dolorum officia laboriosam, omnis atque quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nemo placeat deserunt repudiandae excepturi sequi error aliquam mollitia magni pariatur labore voluptatem rem, voluptate similique beatae? Debitis ipsa ipsum eius?
+                         <a href="single-post.html">Read More</a></p>
+                        <div class="blog4-footer d-flex justify-content-between">
+                            <div class="blog4-user d-flex w-100">
+                                <img src="assets/images/blog4-user.png" alt="img">
+                                <p class="align ml-1">John Doe</p>
+                            </div>
+                            <p class="w-100 align text-right">7 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog4 mb-30">
+                    <div class="blog4-img relative">
+                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
+                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                    </div>
+
+                    <div class="blog4-textarea pt-3">
+                        <p class="color-red">Apartment</p>
+                        <a href="grid-v4.html" class="blog4-heading">This is a standard post</a>
+                        <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officiis in sequi voluptatibus commodi modi voluptate a provident, iusto perferendis corporis debitis eveniet eaque dolorum officia laboriosam, omnis atque quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nemo placeat deserunt repudiandae excepturi sequi error aliquam mollitia magni pariatur labore voluptatem rem, voluptate similique beatae? Debitis ipsa ipsum eius? <a href="single-post.html">Read More</a></p>
+                        <div class="blog4-footer d-flex justify-content-between">
+                            <div class="blog4-user d-flex w-100">
+                                <img src="assets/images/blog4-user.png" alt="img">
+                                <p class="align ml-1">Ali Asif</p>
+                            </div>
+                            <p class="w-100 align text-right">3 Days Ago</p>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="col-lg-4 col-md-12">
+                <div class="pages-search-area mb-30 mt-0">
+                    <div class="pages-search-box relative bg-white">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                <div class="product-categories-box bg-white">
+                  <h3 class="mb-4">Categories Property</h3>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Apartment<span>6 properties</span></a></p>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Family house<span>12 properties</span></a></p>
+                  <p class="mb-3"><i class="fas fa-caret-right mr-2"></i><a href="#">Town house<span>32 properties</span></a></p>
+                  <p><i class="fas fa-caret-right mr-2"></i><a href="#">Land<span>90 properties</span></a></p>
+              </div>
+              <div class="featured-listing-box bg-white">
+                  <h3 class="mb-4">Featured Listing</h3>
+                  <div class="media mb-4">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp1.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice Room with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+                  <div class="media mb-4">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp2.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice house with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left">
+                          <img src="assets/images/single-post/fp3.jpg" alt="img">
+                      </div>
+                      <div class="media-right">
+                          <p>Nice Room with View</p>
+                          <a href="#">$13,000/mo</a>
+                          <p>Beds: 4 Baths:2</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="pages-search-area-tags bg-white">
+                  <a href="#">Apartment</a>
+                  <a href="#">Real Estate</a>
+                  <a href="#">Luxury</a>
+                  <a href="#">Stylish Life</a>
+                  <a href="#">Life Style</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+
+<!-- Footer -->
+  
+<footer>
+    <!-- Footer Subscribe Section -->
+  <section id="subscribe-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                  <div class="sub-box">
+                      <h2 class="color-white text-center mb-4 bold">Subscribe to Our Newsletter</h2>
+                      <form class="relative">
+                      <input class="form-control" type="email" placeholder="Your Email" required>
+                      <button type="submit" class="btn">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer Middle Section -->
+
+  <div class="upper-footer3">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="footer-logo-area mb-50">
+
+                      <div class="footer-logo mb-3">
+                          <a href="index.html"><img src="assets/images/logo-dark.png" class="w-50" alt="img"></a>
+                      </div>
+
+                      <div class="footer-text-area mt-1">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae at molestias nulla? Voluptas eligendi, provident sapiente.</p>
+                      </div>
+
+                      <div class="footer social-icons mt-3">
+                          <a class="color-white mr-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-instagram"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-twitter"></i></a>
+                          <a class="color-white mr-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+                          <a class="color-white" href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="footer-latest-news mb-50">
+                      <div class="footer-list-heading">
+                          <h4>Quick Links</h4>
+                      </div>
+                      <div class="footer-list">
+                          <ul class="list-unstyled">
+                              <li><a href="index.html">Home</a></li>                               
+                              <li><a href="index.html#our-properties">Properties</a></li>                               
+                              <li><a href="index.html#team2">Our Team</a></li>                               
+                              <li><a href="index.html#articles">Articles</a></li>                               
+                              <li><a href="contact-page.html">Contact</a></li>                                                                                   
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="footer-latest-news mb-50">
+                      <div class="footer-list-heading">
+                          <h4>Support</h4>
+                      </div>
+                      <div class="footer-list">
+                          <p class="color-white mb-2">Feel Free To Contact</p>
+                          <ul class="list-unstyled">
+                              <li><p><i class="fas fa-map-marker-alt mr-2"></i>121 King Melbou Australia</p></li>                               
+                              <li><p><i class="fas fa-phone-alt mr-2"></i><a href="tel:111222333">111-222-333</a></p></li>                                                             
+                              <li><p><i class="fas fa-envelope mr-2"></i><a href="mailto:info@dummy.org">info@dummy.org</a></p></li>  
+                              <li><p><i class="fas fa-globe mr-2"></i>www.yourdomain.com</p></li>                                                                                         
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="footer-map mb-50">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26953876.145024687!2d86.01208830043713!3d34.44534209696999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2s!4v1613370882898!5m2!1sen!2s"  height="200" frameborder="0" style="border:0; width: 100%; margin-bottom: -6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+              </div>
+     
+              </div>
+          </div>
+      </div>
+
+      <!-- Lower Footer Section -->
+
+      <div class="lower-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-copyright-area">
+                          <p>© 2021 All Rights Reserved by <a href="#">FINDINN</a></p>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="lower-footer-privacy-area">
+                          <a href="#">Privacy Policy</a>
+                          <span>|</span>
+                          <a href="#">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+</footer>
+
+  <!-- Jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Owl Carousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- Jquery Nice Select -->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!-- Venobox -->
+  <script src="assets/js/venobox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
