@@ -2,10 +2,8 @@
 	"use strict";
 
 // Preloader Timeout
-
-
 setTimeout(function(){
-	$('.loader_bg').fadeToggle();
+	$('.loader-wrap').fadeToggle();
    }, 1000);
 
   

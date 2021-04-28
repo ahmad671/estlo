@@ -184,49 +184,87 @@ a:hover{
   right: 0;
   z-index: 2;
   background-color: var(--blue);
+  box-shadow: 0 0 10px 0 var(--blue);
 }
 
 /*======================================
  ===========  PreLoader CSS  ==========
  ======================================= */
-
-.loader_bg{
+.loader-wrap {
   position: fixed;
   z-index: 999999;
   background: #fff;
   width: 100%;
   height: 1100vh;
 }
-
-.loader{
-width: 100px;
-height: 100px;
-top: calc(50vh - 50px);
-left: calc(50vw - 50px);
-display: flex;
-position: absolute;
-justify-content: center;
-align-items: center;
+.loading{
+  position: absolute;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+}
+.text {
+  color: var(--blue);
+  display: inline-block;
+  margin-left: 5px;
 }
 
-.loader::before{
-content:'';
-height: 100px;
-width: 100px;
-background: transparent;
-border-radius: 50px;
-border: 20px ridge;
-border-width: 30px;
-border-color: var(--blue); 
-animation: load 1s infinite;
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
 }
-@keyframes load{
-    50%{
-        transform: rotatez(180deg);
-    }
-    100%{
-        transform: rotatez(360deg);
-    }
+.bounceball:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-animation: bounce 500ms alternate infinite ease;
+          animation: bounce 500ms alternate infinite ease;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
 }
 
 /*======================================
@@ -260,7 +298,7 @@ animation: load 1s infinite;
   color: var(--white)!important;
 }
 .navbar-brand{
-  width: 100px;
+  width: 115px;
 }
 .nav-colored{
   background-color: var(--blue)!important;
