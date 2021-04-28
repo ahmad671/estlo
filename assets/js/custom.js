@@ -3,9 +3,11 @@
 
 // Preloader Timeout
 
+
 setTimeout(function(){
 	$('.loader_bg').fadeToggle();
-  }, 500);
+   }, 1000);
+
   
 //   Hide and Show Tabs
 

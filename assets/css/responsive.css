@@ -134,7 +134,7 @@
        float: none!important;
        justify-content: center;
      }
-    .upper-footer3{
+    .upper-footer{
       text-align: center;
     }
    }
@@ -180,8 +180,17 @@
     }
   }
   @media only screen and (max-width:991px){
+    .nav-btn{
+      margin-left: 0!important;
+    }
+    .nav-btn .btn{
+      width: 100%;
+      background-color: #fff;
+      color: var(--blue);
+      border-color: var(--blue);
+    }
     .navbar{
-      background-color: var(--red);
+      background-color: var(--blue);
     }
     .pages-search-area{
       margin-top: 25px;

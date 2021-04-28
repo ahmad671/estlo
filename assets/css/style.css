@@ -3,29 +3,32 @@
  
 01.Default CSS
 02.Preloader CSS
-03.Navbar CSS
-04.Featured Properties CSS
-05.Articles & Tips CSS
-06.Main Banner CSS
-07.Property Cities CSS
-08.Why Choose Us Section CSS
-09.Video Section CSS
-10.Facts Section CSS
-11.Achievements Section
-12.Client Carousel CSS
-13.Testimonial CSS
-14.Team Section CSS
-15.Contact Page CSS
-16.Footer CSS 
-17.Pagination CSS
-18.Video Icon Animation CSS
-19.FAQ Page CSS
-20.Pages Search Area CSS
-21.Search Bar CSS
-22.Single-Post Page CSS
-23.Listing Single Page CSS
-24.Login Signup Modal CSS
-25.Owl Carousel Nav CSS
+03.Top Header CSS
+04.Navbar CSS
+05.Main Banner CSS
+06.Property Cities CSS
+07.Why Choose Us CSS
+08.Video Section CSS
+09.How it Works CSS
+10.Client Carousel CSS
+11.Testimonial CSS
+12.Team Section CSS
+13.Contact Page CSS
+14.Footer CSS
+15.Single-Post Page CSS
+16.Listing Single Page CSS
+17.Login Signup Modal CSS
+18.Owl Carousel Nav CSS
+19.Grid Page CSS
+20.Featured Properties CSS
+21.Articles & Tips CSS
+22.Stats Section CSS
+23.Pagination CSS
+24.Video Icon Animation CSS
+25.Pages Search Area CSS
+26.Pages Search Box CSS
+27.Search Bar CSS
+
 
  --------------------------*/
 
@@ -40,7 +43,7 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 :root{
-    --red: #408bea;
+    --blue: #408bea;
     --white: #ffffff;
     --black: #000000;
     --bg-light: #f8f9fa;
@@ -76,20 +79,20 @@ span{
   margin-bottom: 15px;
 }
 a{
-    color: var(--red);
+    color: var(--blue);
     transition: .5s all ease;
     -webkit-transition: .5s all ease;
     font-size: 15px;
 }
 a:hover{
-    color: var(--red);
+    color: var(--blue);
     text-decoration: none;
 }
 .btn{
     color: var(--white);
-    background-color: var(--red);
+    background-color: var(--blue);
     padding: 10px 18px;
-    border: 2px solid var(--red);
+    border: 2px solid var(--blue);
     transition: .5s all ease;
     -webkit-transition: .5s all ease;
     border-radius: 5px;
@@ -101,7 +104,7 @@ a:hover{
 }
 .btn:hover{
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--blue);
 }
 .pb-70{
     padding-bottom: 70px;
@@ -121,14 +124,14 @@ a:hover{
 .color-black{
   color: var(--black)!important;
 }
-.color-red{
-  color: var(--red);
+.color-blue{
+  color: var(--blue);
 }
 .bg-black{
   background-color: #1f1e23;
 }
 .bg-blue{
-  background-color: var(--red)!important;
+  background-color: var(--blue)!important;
 }
 .bold{
   font-weight: bold;
@@ -159,8 +162,8 @@ a:hover{
   filter: brightness(40%);
 }
 .form-control:focus{
-  border-color: var(--red);
-  box-shadow: 0 0 5px 0 var(--red);
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
 }
 .line{
   height: 2px;
@@ -180,64 +183,63 @@ a:hover{
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: var(--red);
+  background-color: var(--blue);
 }
 
 /*======================================
  ===========  PreLoader CSS  ==========
  ======================================= */
 
- .loader_bg{
+.loader_bg{
   position: fixed;
   z-index: 999999;
   background: #fff;
   width: 100%;
   height: 1100vh;
 }
+
 .loader{
-  border: 0 solid transparent;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px);
+width: 100px;
+height: 100px;
+top: calc(50vh - 50px);
+left: calc(50vw - 50px);
+display: flex;
+position: absolute;
+justify-content: center;
+align-items: center;
 }
-.loader:before, .loader:after{
-  content: '';
-  border: 10px solid var(--red);
-  border-radius: 50%;
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: loader 2s linear infinite;
-  opacity: 0;
+
+.loader::before{
+content:'';
+height: 100px;
+width: 100px;
+background: transparent;
+border-radius: 50px;
+border: 20px ridge;
+border-width: 30px;
+border-color: var(--blue); 
+animation: load 1s infinite;
 }
-.loader:before{
-  animation-delay: .3s;
+@keyframes load{
+    50%{
+        transform: rotatez(180deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
 }
-@keyframes loader{
-  0%{
-      transform: scale(0);
-      opacity: 0;
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      transform: scale(1);
-      opacity: 0;
-  }
-}
+
+/*======================================
+ =========== Top-Header CSS  ===========
+ ======================================= */
+
 .top-header-search-box .form-control{
   height: 30px;
 }
 .top-header-search-icon{
   background: transparent;
   border: none;
-  color: var(--red);
+  color: var(--blue);
   position: absolute;
   right: 5px;
   top: 5px;
@@ -246,9 +248,11 @@ a:hover{
 .top-header-search-icon:focus{
   outline: none;
 }
+
 /*======================================
  =============  Navbar CSS  ============
  ======================================= */
+
 .navbar{
   z-index: 10;
 }
@@ -259,19 +263,19 @@ a:hover{
   width: 100px;
 }
 .nav-colored{
-  background-color: var(--red)!important;
+  background-color: var(--blue)!important;
 }
 .navbar-toggler{
   border-color: var(--white)!important;
 }
 .sticky .nav-btn .btn{
   background-color: var(--white);
-  color: var(--red);
+  color: var(--blue);
   border-color: var(--white);
 }
 .nav-colored .nav-btn .btn{
   background-color: var(--white);
-  color: var(--red);
+  color: var(--blue);
   border-color: var(--white);
 }
 /*======================================
@@ -317,14 +321,14 @@ a:hover{
 }
 
 /*======================================
- ====== Why Choose Us Section CSS ======
+ ========== Why Choose Us CSS ==========
  ======================================= */
 
 .why-choose-us-box-icon span{
   font-size: 40px;
 }
 .why-choose-us-box span{
-  background-color: var(--red);
+  background-color: var(--blue);
   color: var(--white);
   border-radius: 50px;
   height: 100px;
@@ -341,25 +345,7 @@ a:hover{
   border-radius: 5px;
   margin-top: -40px;
 }
-.why-choose-us-box span{
-  color: #fff;
-  border-radius: 50px;
-  height: 100px;
-  line-height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  transition: .5s all ease;
-  -webkit-transition: .5s all ease;
-}
-.why-choose-us-box-textarea{
-  padding: 70px 20px 40px 20px;
-  border-radius: 5px;
-  margin-top: -40px;
-  transition: .7s all ease;
-  -webkit-transition: .7s all ease;
-}
+
 /*======================================
  =========== Video Section CSS =========
  ======================================= */
@@ -393,7 +379,7 @@ a:hover{
   font-size: 18px;
   border-radius: 50%;
   color: var(--white)!important;
-  background-color: var(--red);
+  background-color: var(--blue);
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -415,13 +401,14 @@ a:hover{
   transition: all ease 0.5s;
   -webkit-animation: ripple 1.5s ease-out infinite;
          animation: ripple 1.5s ease-out infinite;
-  background-color: var(--red);
+  background-color: var(--blue);
   z-index: -1;
   }
    
 /*======================================
- ========== How it Works Section =======
+ =========== How it Works CSS ==========
  ======================================= */
+
 .how-it-works-box{
   box-shadow: 0 0 5px 0 #f1f1f1;
   padding: 40px 0;
@@ -479,7 +466,7 @@ a:hover{
   padding: 60px 30px;
   border: 1px solid #f1f1f1;
   border-radius: 30px 5px 5px 5px;
-  border-top: 10px solid var(--red);
+  border-top: 10px solid var(--blue);
   margin-bottom: 27px;
 }
 .testimonial-box h4{
@@ -512,7 +499,7 @@ a:hover{
   opacity: 1;
 }
 .testimonial-box:hover .testimonial-quote-left{
-  color: var(--red);
+  color: var(--blue);
 }
 
 
@@ -589,7 +576,7 @@ a:hover{
 }
 .contact-address-icons{
   font-size: 18px;
-  color: var(--red);
+  color: var(--blue);
   margin-top: 2px;
   margin-right: 10px;
 }
@@ -622,8 +609,8 @@ a:hover{
 }
 .follow-us a:hover{
   color: var(--white);
-  border-color: var(--red);
-  background-color: var(--red);
+  border-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .valid-feedback{
@@ -670,38 +657,38 @@ a:hover{
   width: 35%;
 }
 /* Upper Footer CSS */
-.upper-footer3 {
+.upper-footer {
   background-color: #252429;
   color: #eaeaea;
   padding-top: 70px;
   padding-bottom: 20px;
 }
-.upper-footer3 .footer-logo a{
+.upper-footer .footer-logo a{
   font-weight: bold;
   font-size: 30px;
   color: var(--white);
 }
-.upper-footer3 .footer-list-heading{
+.upper-footer .footer-list-heading{
   margin-bottom: 20px;
 }
-.upper-footer3 .footer-list-heading h4{
+.upper-footer .footer-list-heading h4{
 color: var(--white);
   font-size: 22px;
   font-weight: bold;
 }
-.upper-footer3 .footer-list li{
+.upper-footer .footer-list li{
   margin-bottom: 8px;
   transition: .5s all ease;
   -webkit-transition: .5s all ease;
 }
-.upper-footer3 .footer-list li a{
+.upper-footer .footer-list li a{
  color: var(--white);
 }
-.upper-footer3 .footer-list li p{
+.upper-footer .footer-list li p{
 color: var(--white);
 margin-top: 10px;
 }
-.upper-footer3 .footer-list .footer-arrow{
+.upper-footer .footer-list .footer-arrow{
   font-size: 15px;
 }
 
@@ -715,270 +702,12 @@ margin-top: 10px;
  }
  .lower-footer-copyright-area a{
    font-weight: bold;
-   color: var(--red);
+   color: var(--blue);
  }
  .lower-footer-privacy-area a{
  font-size: 15px;
    color: var(--white);
  }
-
- /*======================================
- ============= Pagination CSS ==========
- ======================================= */
-
-.my-pagination a{
-  border-radius: 5px;
-  border: 1px solid var(--red);
-  padding: 8px 12px;
-  margin-right: 5px;
-  display: inline-block;
-}
-.my-pagination a:focus {
-  background-color: var(--red)!important;
-  color: var(--white);
-}
-
-
- /*======================================
- =======  Video Icon Animation CSS ======
- ======================================= */
-
-  .video-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    border: 1px solid var(--red);
-    border-radius: 50%;
-    color: var(--white)!important;
-    background-color: var(--red);
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-    text-align: center;
-  }
-  .video-icon::after, .video-icon::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 0;
-    border-radius: 50%;
-    -webkit-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-    -webkit-animation: ripple 1.5s ease-out infinite;
-           animation: ripple 1.5s ease-out infinite;
-    background-color: var(--red);
-    z-index: -1;
-    }    
-    @keyframes ripple {
-    0%, 35% {
-     -webkit-transform: scale(0);
-             transform: scale(0);
-     opacity: 1;
-    }
-    50% {
-     -webkit-transform: scale(1.1);
-             transform: scale(1.1);
-     opacity: 0.8;
-    }
-    100% {
-     opacity: 0;
-     -webkit-transform: scale(1.8);
-             transform: scale(1.8);
-    }
-    }
-
-/*======================================
- ======== Pages Search Area CSS ========
- ======================================= */
-
- .pages-search-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.pages-search-box a{
-  position: absolute;
-  right: 35px;
-  top: 35px;
-  color: #adadad;
-}
-.product-categories-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.product-categories-box span{
-  float: right;
-}
-.recent-products-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.featured-listing-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.pages-selection-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.pages-selection-box .form-group a{
-  position: absolute;
-  right: 14px;
-  top: 10px;
-  color: #adadad;
-}
-.pages-selection-box .form-control{
-  height: 42px;
-}
-.pages-selection-box .nice-select{
-  float: none;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  padding: 6px 12px;
-  line-height: 28px;
-  border: 1px solid #ced4da;
-}
-
-.pages-selection-box .nice-select:focus{
-  border-color: var(--red);
-  box-shadow: 0 0 5px 0 var(--red);
-}
-
-.pages-mortgage-calculator-box{
-  margin-bottom: 25px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.pages-mortgage-calculator-box .form-group span{
-  position: absolute;
-  right: 14px;
-  top: 10px;
-  color: #adadad;
-}
-.pages-mortgage-calculator-box .form-control{
-  height: 42px;
-}
-.pages-mortgage-calculator-box .nice-select{
-  float: none;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  padding: 6px 12px;
-  line-height: 28px;
-  border: 1px solid #ced4da;
-}
-
-.pages-mortgage-calculator-box .nice-select:focus{
-  border-color: var(--red);
-  box-shadow: 0 0 5px 0 var(--red);
-}
-.featured-listing-box .media-left img{
-  width: 100px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-.recent-products-box .media-left img{
-  border-radius: 5px;
-  width: 100px;
-  margin-right: 10px;
-}
-.pages-search-area h3{
-  font-weight: bold;
-  font-size: 18px;
-}
-.pages-search-area-tags{
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-}
-.pages-search-area-tags a{
-  background-color: #f1f1f1;
-  padding: 8px;
-  margin: 4px;
-  border-radius: 5px;
-  display: inline-block;
-}
-.listing-pages-listed-by-box{
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 0 #c1c1c1;
-  margin-bottom: 25px;
-}
-.listing-pages-listed-by-box input{
-  height: 42px;
-  margin-bottom: 1rem;
-}
-
-/*======================================
- ========= Pages Search Box CSS ========
- ======================================= */
-
- .pages-search-box-input{
-  margin-bottom: 1rem;
-}
-.pages-header-search-box{
-  background-color: var(--white);
-  padding: 2rem 2rem 1rem 2rem;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
-}
-.pages-search-box-input .nice-select{
- float: none;
- border-radius: 5px;
- margin-bottom: 1rem;
- height: 50px;
- padding: 6px 12px;
- line-height: 35px;
- border: 1px solid #ced4da;
-}
-.pages-search-box-input .nice-select:focus{
- border-color: var(--red);
- box-shadow: 0 0 5px 0 var(--red);
-}
-.pages-search-box-input-icon{
-   position: absolute;
-   right: 25px;
-   top: 18px;
-   color: #adadad;
-}
-
-/*======================================
- =========== Search Bar CSS ===========
- ======================================= */
-
- .search-bar{
-  box-shadow: 0 0 5px 0 #c1c1c1;
-  border-radius: 5px;
-  line-height: 50px;
-  padding: 0 20px;
-  margin-bottom: 30px;
-}
-.search-area-options .nice-select{
-  color: var(--black);
-  background: transparent;
-  border: none;
-  line-height: 52px;
-  padding-left: 5px;
-}
-.search-area-options .nice-select:after{
-  margin-top: 2px;
-}
 
 /*======================================
  ========= Single-Post Page CSS ========
@@ -989,7 +718,7 @@ margin-top: 10px;
   margin-right: 5px;
 }
 .single-post-highlighted-box{
-  border-left: 4px solid var(--red);
+  border-left: 4px solid var(--blue);
   border-radius: 5px;
   padding: 25px;
 }
@@ -1031,7 +760,7 @@ margin-top: 10px;
   width: 30px;
   text-align: center;
   line-height: 33px;
-  color: var(--red);
+  color: var(--blue);
   font-size: 16px;
   border-radius: 5px;
   margin: 2px;
@@ -1049,7 +778,7 @@ margin-top: 10px;
   font-size: 20px;
 }
 .listing-single-title-price-icons span{
-  color: var(--red);
+  color: var(--blue);
   font-size: 22px;
 }
 .listed-by-img img{
@@ -1066,7 +795,7 @@ margin-top: 10px;
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
-  color: var(--red);
+  color: var(--blue);
   margin: 0px 2px 6px 0px;
 }
 .listing-single-property-details-lists ul li{
@@ -1214,8 +943,8 @@ margin-top: 10px;
 }
 
 
-  /*================================================
- ======== Featured Properties CSS =========
+/*================================================
+ ============== Featured Properties CSS ==========
  ================================================== */
 
  .featured-property-box{
@@ -1284,7 +1013,7 @@ margin-top: 10px;
 }
 
  /*======================================
- ====== Articles & Tips CSS =====
+ ============ Articles & Tips CSS =======
  ======================================= */
 
  .blog{
@@ -1336,7 +1065,7 @@ margin-top: 10px;
 }
 
 /*=======================================
- ======= Stats Section CSS ======
+ ============= Stats Section CSS ========
  ======================================== */
 
  #stats{
@@ -1362,11 +1091,269 @@ margin-top: 10px;
   width: 70px;
   font-size: 25px;
   line-height: 70px;
-  background-color: var(--red);
+  background-color: var(--blue);
   border-radius: 50%;
 }
 .stat-count{
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+/*======================================
+ ============= Pagination CSS ==========
+ ======================================= */
+
+ .my-pagination a{
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  padding: 8px 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.my-pagination a:focus {
+  background-color: var(--blue)!important;
+  color: var(--white);
+}
+
+
+ /*======================================
+ =======  Video Icon Animation CSS ======
+ ======================================= */
+
+  .video-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    color: var(--white)!important;
+    background-color: var(--blue);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .video-icon::after, .video-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    -webkit-animation: ripple 1.5s ease-out infinite;
+           animation: ripple 1.5s ease-out infinite;
+    background-color: var(--blue);
+    z-index: -1;
+    }    
+    @keyframes ripple {
+    0%, 35% {
+     -webkit-transform: scale(0);
+             transform: scale(0);
+     opacity: 1;
+    }
+    50% {
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+     opacity: 0.8;
+    }
+    100% {
+     opacity: 0;
+     -webkit-transform: scale(1.8);
+             transform: scale(1.8);
+    }
+    }
+
+/*======================================
+ ======== Pages Search Area CSS ========
+ ======================================= */
+
+ .pages-search-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-search-box a{
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: #adadad;
+}
+.product-categories-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.product-categories-box span{
+  float: right;
+}
+.recent-products-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.featured-listing-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-selection-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-selection-box .form-group a{
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  color: #adadad;
+}
+.pages-selection-box .form-control{
+  height: 42px;
+}
+.pages-selection-box .nice-select{
+  float: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  line-height: 28px;
+  border: 1px solid #ced4da;
+}
+
+.pages-selection-box .nice-select:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
+}
+
+.pages-mortgage-calculator-box{
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-mortgage-calculator-box .form-group span{
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  color: #adadad;
+}
+.pages-mortgage-calculator-box .form-control{
+  height: 42px;
+}
+.pages-mortgage-calculator-box .nice-select{
+  float: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  line-height: 28px;
+  border: 1px solid #ced4da;
+}
+
+.pages-mortgage-calculator-box .nice-select:focus{
+  border-color: var(--blue);
+  box-shadow: 0 0 5px 0 var(--blue);
+}
+.featured-listing-box .media-left img{
+  width: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.recent-products-box .media-left img{
+  border-radius: 5px;
+  width: 100px;
+  margin-right: 10px;
+}
+.pages-search-area h3{
+  font-weight: bold;
+  font-size: 18px;
+}
+.pages-search-area-tags{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+}
+.pages-search-area-tags a{
+  background-color: #f1f1f1;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.listing-pages-listed-by-box{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  margin-bottom: 25px;
+}
+.listing-pages-listed-by-box input{
+  height: 42px;
+  margin-bottom: 1rem;
+}
+
+/*======================================
+ ========= Pages Search Box CSS ========
+ ======================================= */
+
+ .pages-search-box-input{
+  margin-bottom: 1rem;
+}
+.pages-header-search-box{
+  background-color: var(--white);
+  padding: 2rem 2rem 1rem 2rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.pages-search-box-input .nice-select{
+ float: none;
+ border-radius: 5px;
+ margin-bottom: 1rem;
+ height: 50px;
+ padding: 6px 12px;
+ line-height: 35px;
+ border: 1px solid #ced4da;
+}
+.pages-search-box-input .nice-select:focus{
+ border-color: var(--blue);
+ box-shadow: 0 0 5px 0 var(--blue);
+}
+.pages-search-box-input-icon{
+   position: absolute;
+   right: 25px;
+   top: 18px;
+   color: #adadad;
+}
+
+/*======================================
+ =========== Search Bar CSS ===========
+ ======================================= */
+
+ .search-bar{
+  box-shadow: 0 0 5px 0 #c1c1c1;
+  border-radius: 5px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.search-area-options .nice-select{
+  color: var(--black);
+  background: transparent;
+  border: none;
+  line-height: 52px;
+  padding-left: 5px;
+}
+.search-area-options .nice-select:after{
+  margin-top: 2px;
 }
