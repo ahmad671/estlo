@@ -127,6 +127,9 @@ a:hover{
 .bg-black{
   background-color: #1f1e23;
 }
+.bg-blue{
+  background-color: var(--red)!important;
+}
 .bold{
   font-weight: bold;
 }
@@ -228,32 +231,20 @@ a:hover{
       opacity: 0;
   }
 }
-
-.top-header3-dropdown .nice-select{
-  border: none;
+.top-header-search-box .form-control{
+  height: 30px;
+}
+.top-header-search-icon{
   background: transparent;
-  color: var(--white);
-  height: 0px;
-  line-height: 23px;
-  padding-left: 6px;
+  border: none;
+  color: var(--red);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 14px;
 }
-.top-header3-dropdown .nice-select:after{
-  margin-top: 9px;
-}
-.top-header3-dropdown .nice-select .list{
-  background-color: var(--black);
-  z-index: 12;
-  margin-top: 35px;
-}
-.top-header3-dropdown .nice-select .list li:hover{
-  background-color: var(--red);
-  color: var(--white);
-}
-.top-header3-dropdown .nice-select .option.selected.focus {
-  background-color: var(--red);
-}
-.top-header3-dropdown-icon{
-  margin-top: 1px;
+.top-header-search-icon:focus{
+  outline: none;
 }
 /*======================================
  =============  Navbar CSS  ============
@@ -263,7 +254,6 @@ a:hover{
 }
 .nav-link{
   color: var(--white)!important;
-  font-size: 17px;
 }
 .navbar-brand{
   width: 100px;
@@ -333,7 +323,7 @@ a:hover{
 .why-choose-us-box-icon span{
   font-size: 40px;
 }
-.why-choose-us-dark-box span{
+.why-choose-us-box span{
   background-color: var(--red);
   color: var(--white);
   border-radius: 50px;
@@ -344,7 +334,7 @@ a:hover{
   display: block;
   position: relative;
 }
-.why-choose-us-dark-box-textarea{
+.why-choose-us-box-textarea{
   background-color: #282f44;
   color: var(--white);
   padding: 70px 20px 40px 20px;
@@ -352,7 +342,7 @@ a:hover{
   margin-top: -40px;
 }
 .why-choose-us-box span{
-  color: var(--red);
+  color: #fff;
   border-radius: 50px;
   height: 100px;
   line-height: 100px;
@@ -370,15 +360,6 @@ a:hover{
   transition: .7s all ease;
   -webkit-transition: .7s all ease;
 }
-.why-choose-us-box:hover span{
-  background-color: var(--red);
-  color: var(--white);
-}
-.why-choose-us-box:hover .why-choose-us-box-textarea{
-  background-color: #282f44;
-  color: var(--white);
-}
-
 /*======================================
  =========== Video Section CSS =========
  ======================================= */
@@ -439,27 +420,21 @@ a:hover{
   }
    
 /*======================================
- ========== Achievements Section =======
+ ========== How it Works Section =======
  ======================================= */
-
-.achievements-box h4{
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 5px;
+.how-it-works-box{
+  box-shadow: 0 0 5px 0 #f1f1f1;
+  padding: 40px 0;
+  border-radius: 5px;
 }
-.achievements-box p{
-  letter-spacing: 1px;
-}
-.how-it-works-icon{
+ .how-it-works-icon{
   font-size: 30px;
   position: relative;
-  transform: rotate(-45deg);
 }
 .how-it-works-icon-box{
   display: block;
   height: 85px;
   margin: 0 auto;
-  transform: rotate(45deg);
   width: 85px;
   border-radius: 20px;
   line-height: 92px;
@@ -486,11 +461,6 @@ a:hover{
 }
 .how-it-works-box p{
   color: #838383;
-}
-.how-it-works-box-arrow{
-  position: absolute;
-  right: -40px;
-  top: 30px;
 }
 /*======================================
  ========== Client Carousel CSS ========
@@ -519,10 +489,12 @@ a:hover{
 }
 .testimonial-img{
   position: absolute;
+  right: 0;
   bottom: -25px;
   width: 60px!important;
   transition: .5s all ease;
   -webkit-transition: .5s all ease;
+  opacity: 0.4;
 }
 .testimonial-quote-left{
   position: absolute;
@@ -533,20 +505,11 @@ a:hover{
   transition: .5s all ease;
   -webkit-transition: .5s all ease;
 }
-.testimonial-quote-right{
-  position: absolute;
-  bottom: 10px;
-  right: 10%;
-  color: #ebebeb;
-  font-size: 30px;
-  transition: .5s all ease;
-  -webkit-transition: .5s all ease;
-}
+
 .testimonial-box:hover .testimonial-img{
   transform: scale(1.08);
-}
-.testimonial-box:hover .testimonial-quote-right{
-  color: var(--red);
+  right: 20px;
+  opacity: 1;
 }
 .testimonial-box:hover .testimonial-quote-left{
   color: var(--red);
@@ -584,8 +547,19 @@ a:hover{
   text-align: center;
   font-size: 14px;
 }
+.team-contact-icons a{
+  display: inline-block;
+  color: var(--black);
+  background-color: var(--bg-light);
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
 .team-box:hover{
-  margin-top: -10px;
+  transform: scale(1.05);
 }
 .team-box:hover .team-img img{
   transform: scale(1.1);
@@ -669,7 +643,9 @@ a:hover{
 /*======================================
  =============  Footer CSS  ============
  ======================================= */
+
 /* Subscribe Box CSS */
+
 #subscribe-area{
   background-image: url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
@@ -746,7 +722,6 @@ margin-top: 10px;
    color: var(--white);
  }
 
-
  /*======================================
  ============= Pagination CSS ==========
  ======================================= */
@@ -818,34 +793,6 @@ margin-top: 10px;
              transform: scale(1.8);
     }
     }
-
-
-/*======================================
- ============= FAQ Page CSS ============
- ======================================= */
-
- #faq .card-header{
-  background-color: var(--white);;
-  border-radius: 5px;
-}
-.cards-area{
-  background-color: var(--white);
-  padding: 40px 20px 25px 20px;
-  border-radius: 5px;
-}
-#faq .card{
-  border-radius: 5px;
-  margin-bottom: 15px;
-  border-left: 3px solid var(--red);
-}
-.card-txt{
-  margin-top: 2px;
-}
-.collapse .caret{
-  position: absolute;
-  top: 0;
-}
-
 
 /*======================================
  ======== Pages Search Area CSS ========
@@ -978,7 +925,6 @@ margin-top: 10px;
   margin-bottom: 1rem;
 }
 
-
 /*======================================
  ========= Pages Search Box CSS ========
  ======================================= */
@@ -1094,11 +1040,7 @@ margin-top: 10px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.single-v1-banner-img img{
-  filter: brightness(50%);
-}
-
- .listing-single-details-area-tags-n-details{
+.listing-single-details-area-tags-n-details{
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #c1c1c1;
@@ -1253,15 +1195,15 @@ margin-top: 10px;
  ============= Grid Page CSS ===========
  ======================================= */
 
-.grid-v1-banner{
-  background-image: url(../images/grid-v1-banner.jpg);
+.blogs-grid-banner{
+  background-image: url(../images/blogs-grid-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
   overflow: hidden;
 }
-.grid-v1-banner::before{
+.blogs-grid-banner::before{
   content: "";
   position: absolute;
   top: 0;
@@ -1273,41 +1215,32 @@ margin-top: 10px;
 
 
   /*================================================
- ======== Index-4 Featured Properties CSS =========
+ ======== Featured Properties CSS =========
  ================================================== */
 
- .featured-property-box4{
+ .featured-property-box{
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 10px;
 }
-.featured-property-box4-img img{
+.featured-property-box-img img{
   filter: brightness(70%);
 }
-.featured-property-box4-heading{
+.featured-property-box-heading{
   color: var(--black)!important;
   font-size: 18px;
   font-weight: bold;
 }
-.featured-property-box4-tag{
+.featured-property-box-tag{
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   padding: 2px 10px;
   border-radius: 2px;
   background-color: #3e4c66;
   color: var(--white);
 }
-.featured-property-box4-featured-tag{
- position: absolute;
- top: 20px;
- left: 100px;
- padding: 2px 10px;
- border-radius: 2px;
- background-color: var(--red);
- color: var(--white);
-}
-.featured-property-box4-price{
+.featured-property-box-price{
  position: absolute;
  bottom: 10px;
  left: 10px;
@@ -1315,9 +1248,9 @@ margin-top: 10px;
  font-size: 22px;
  font-family: bold;
 }
-.featured-property-box4-share-icon{
+.featured-property-box-share-icon{
  position: absolute;
- bottom: 10px;
+ top: 10px;
  right: 10px;
  background-color: #0f151fc9;
  color: var(--white)!important;
@@ -1328,9 +1261,9 @@ margin-top: 10px;
  line-height: 34px;
  text-align: center;
 }
-.featured-property-box4-heart-icon{
+.featured-property-box-heart-icon{
  position: absolute;
- bottom: 10px;
+ top: 10px;
  right: 50px;
  background-color: #0f151fc9;
  color: var(--white)!important;
@@ -1341,35 +1274,35 @@ margin-top: 10px;
  line-height: 34px;
  text-align: center;
 }
-.featured-property-box4-user img{
+.featured-property-box-user img{
  width: 40px!important;
 }
-.featured-property-box4-footer{
+.featured-property-box-footer{
  border-top: 1px solid #eeeeee;
  margin-top: 15px;
  padding-top: 15px;
 }
 
  /*======================================
- ====== Index-4 Articles & Tips CSS =====
+ ====== Articles & Tips CSS =====
  ======================================= */
 
- .blog4{
+ .blog{
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   padding: 10px;
 }
-.blog4-img img{
+.blog-img img{
   filter: brightness(70%);
 }
-.blog4-heading{
+.blog-heading{
   color: var(--black)!important;
   font-size: 18px;
   font-weight: bold;
 }
- .blog4-share-icon{
+ .blog-share-icon{
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
   background-color: #0f151fc9;
   color: var(--white)!important;
@@ -1380,9 +1313,9 @@ margin-top: 10px;
   line-height: 34px;
   text-align: center;
  }
- .blog4-heart-icon{
+ .blog-heart-icon{
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 50px;
   background-color: #0f151fc9;
   color: var(--white)!important;
@@ -1393,17 +1326,17 @@ margin-top: 10px;
   line-height: 34px;
   text-align: center;
  }
-.blog4-user img{
+.blog-user img{
  width: 40px!important;
 }
-.blog4-footer{
+.blog-footer{
  border-top: 1px solid #eeeeee;
  margin-top: 15px;
  padding-top: 15px;
 }
 
 /*=======================================
- ======= Index-4 Stats Section CSS ======
+ ======= Stats Section CSS ======
  ======================================== */
 
  #stats{

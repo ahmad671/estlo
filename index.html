@@ -33,42 +33,29 @@
           <div class="loader"></div>
       </div>
     <!-- Top-Header -->
-    <div class="top-header3 py-2 bg-black">
+    <div class="top-header py-2 bg-black">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="top-header3-link1">
-                        <a class="color-white mr-2" href="tel:111222333"><i class="fal fa-phone-alt mr-2"></i>111-222-333</a>
+                <div class="col-lg-4 col-md-3 align">
+                    <div class="top-header-mail">
+                        <a class="color-white mr-2" href="mailto:info@dummt.org"><i class="fal fa-envelope mr-2"></i>info@dummy.org</a>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-8">
-                    <div class="top-header3-right-area justify-content-end d-flex">
-                        <div class="top-header3-dropdowns d-flex">
-                            <div class="top-header3-dropdown d-flex">
-                                <span class="top-header3-dropdown-icon"><i class="fal fa-globe color-white"></i></span>
-                                <select>
-                                    <option value="">Language</option>
-                                    <option value="English">English</option>
-                                    <option value="French">French</option>
-                                    <option value="Espanish">Espanish</option>
-                                    <option value="Chinese">Chinese</option>
-                                </select>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="top-header-search-box">
+                        <form>
+                            <div class="form-group relative mb-0">
+                                <input class="form-control" type="text" placeholder="Search by ID" required>
+                                <button class="top-header-search-icon" type="submit"><i class="fal fa-search"></i></button>
                             </div>
-
-                            <div class="top-header3-dropdown d-flex">
-                                <span class="top-header3-dropdown-icon"><i class="color-white fal fa-money-bill-alt"></i></span>
-                                <select>
-                                    <option value="">Currency</option>
-                                    <option value="USD">USD</option>
-                                    <option value="PKR">PKR</option>
-                                    <option value="EURO">EURO</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="top-header3-link2">
-                            <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="fas fa-sign-in-alt mr-2"></i>Login or Register</a>
-                        </div>
+                        </form>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 align">
+                    <div class="top-header-login text-right">
+                        <a data-toggle="modal" data-target="#loginmodal" class="color-white mr-2" href="#"><i class="far fa-sign-in mr-2"></i>Login or Register</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -87,10 +74,10 @@
                       <a class="nav-link" href="about-us.html">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="grid-v1.html">Properties</a>
+                    <a class="nav-link" href="blogs-grid.html">Properties</a>
                 </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="blogs-list1.html">Blogs</a>
+                    <a class="nav-link" href="blogs-list.html">Blogs</a>
                 </li>
                   <li class="nav-item">
                       <a class="nav-link" href="index.html#testimonial">Testimonials</a>
@@ -257,7 +244,7 @@
 
      <!-- how it Works Section -->
 
-     <section id="how-it-works" class="pb-50">
+     <section id="how-it-works" class="bg-white pb-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -269,7 +256,6 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="how-it-works-box relative mb-50 text-center">
-                        <span class="how-it-works-box-arrow"><img src="assets/images/arrow.png" alt="arrow"></span>
                         <span class="how-it-works-icon-box how-it-works-icon-box1"><i class="how-it-works-icon fal fa-receipt"></i></span>
                         <h4>Evaluate Property</h4>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have Ipsum available.</p>
@@ -278,7 +264,6 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="how-it-works-box relative mb-50 text-center">
-                        <span class="how-it-works-box-arrow"><img src="assets/images/arrow.png" alt="arrow"></span>
                         <span class="how-it-works-icon-box how-it-works-icon-box2 relative"><i class="how-it-works-icon fal fa-user"></i></span>
                         <h4>Meet Your Agent</h4>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have Ipsum available.</p>
@@ -311,28 +296,27 @@
           <div>
               <div id="featured-properties-carousel" class="owl-carousel owl-theme">
                   <div class="item">
-                      <div class="featured-property-box4">
-                          <div class="featured-property-box4-img relative">
+                      <div class="featured-property-box">
+                          <div class="featured-property-box-img relative">
                               <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                              <p class="featured-property-box4-tag">Limited</p>
-                              <p class="featured-property-box4-featured-tag">Featured</p>
-                              <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                              <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                              <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                              <p class="featured-property-box-tag bg-blue">Featured</p>
+                              <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                              <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                              <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                           </div>
 
-                          <div class="featured-property-box4-textarea pt-3">
+                          <div class="featured-property-box-textarea pt-3">
                               <p class="color-red">Apartment</p>
-                              <a href="grid-v4.html" class="featured-property-box4-heading">Decorated Flats</a>
+                              <a href="grid-v4.html" class="featured-property-box-heading">Decorated Flats</a>
                               <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                              <div class="featured-property-box4-specs d-flex">
+                              <div class="featured-property-box-specs d-flex">
                                   <p>Beds: 4</p>
                                   <p class="mx-2">Baths: 2</p>
                                   <p>Sq. ft: 5230</p>
                               </div>
-                              <div class="featured-property-box4-footer d-flex justify-content-between">
-                                  <div class="featured-property-box4-user d-flex w-100">
-                                      <img src="assets/images/blog4-user.png" alt="img">
+                              <div class="featured-property-box-footer d-flex justify-content-between">
+                                  <div class="featured-property-box-user d-flex w-100">
+                                      <img src="assets/images/blog-user.png" alt="img">
                                       <p class="align ml-1">Ali Asif</p>
                                   </div>
                                   <p class="w-100 align text-right">3 Days Ago</p>
@@ -342,27 +326,27 @@
                   </div>
 
                   <div class="item">
-                    <div class="featured-property-box4">
-                        <div class="featured-property-box4-img relative">
-                            <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                            <p class="featured-property-box4-tag">On Rent</p>
-                            <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                            <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                            <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                    <div class="featured-property-box">
+                        <div class="featured-property-box-img relative">
+                            <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                            <p class="featured-property-box-tag">On Rent</p>
+                            <p class="featured-property-box-price">$16,000<small>/mo</small></p>
+                            <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                            <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                         </div>
 
-                        <div class="featured-property-box4-textarea pt-3">
+                        <div class="featured-property-box-textarea pt-3">
                             <p class="color-red">Apartment</p>
-                            <a href="grid-v4.html" class="featured-property-box4-heading">Luxury Villa</a>
+                            <a href="grid-v4.html" class="featured-property-box-heading">Luxury Villa</a>
                             <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                            <div class="featured-property-box4-specs d-flex">
+                            <div class="featured-property-box-specs d-flex">
                                 <p>Beds: 3</p>
                                 <p class="mx-2">Baths: 1</p>
                                 <p>Sq. ft: 5000</p>
                             </div>
-                            <div class="featured-property-box4-footer d-flex justify-content-between">
-                                <div class="featured-property-box4-user d-flex w-100">
-                                    <img src="assets/images/blog4-user.png" alt="img">
+                            <div class="featured-property-box-footer d-flex justify-content-between">
+                                <div class="featured-property-box-user d-flex w-100">
+                                    <img src="assets/images/blog-user.png" alt="img">
                                     <p class="align ml-1">Nomi Vin</p>
                                 </div>
                                 <p class="w-100 align text-right">9 Days Ago</p>
@@ -372,27 +356,27 @@
                 </div>
 
                 <div class="item">
-                    <div class="featured-property-box4">
-                        <div class="featured-property-box4-img relative">
+                    <div class="featured-property-box">
+                        <div class="featured-property-box-img relative">
                             <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
-                            <p class="featured-property-box4-tag">For Sale</p>
-                            <p class="featured-property-box4-price">$17,000<small>/mo</small></p>
-                            <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                            <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                            <p class="featured-property-box-tag">For Sale</p>
+                            <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                            <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                            <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                         </div>
 
-                        <div class="featured-property-box4-textarea pt-3">
+                        <div class="featured-property-box-textarea pt-3">
                             <p class="color-red">Apartment</p>
-                            <a href="grid-v4.html" class="featured-property-box4-heading">Laurel Rooms</a>
+                            <a href="grid-v4.html" class="featured-property-box-heading">Laurel Rooms</a>
                             <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                            <div class="featured-property-box4-specs d-flex">
+                            <div class="featured-property-box-specs d-flex">
                                 <p>Beds: 5</p>
                                 <p class="mx-2">Baths: 2</p>
                                 <p>Sq. ft: 5320</p>
                             </div>
-                            <div class="featured-property-box4-footer d-flex justify-content-between">
-                                <div class="featured-property-box4-user d-flex w-100">
-                                    <img src="assets/images/blog4-user.png" alt="img">
+                            <div class="featured-property-box-footer d-flex justify-content-between">
+                                <div class="featured-property-box-user d-flex w-100">
+                                    <img src="assets/images/blog-user.png" alt="img">
                                     <p class="align ml-1">John Doe</p>
                                 </div>
                                 <p class="w-100 align text-right">7 Days Ago</p>
@@ -434,11 +418,11 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="why-choose-us-dark-box mb-30 text-center relative">
+                <div class="why-choose-us-box mb-30 text-center relative">
                     <div class="why-choose-us-box-icon">
                         <span><i class="fal fa-user-tie"></i></span>
                     </div>
-                    <div class="why-choose-us-dark-box-textarea">
+                    <div class="why-choose-us-box-textarea">
                         <h4 class="bold">Experienced<br>Agents</h4>
                         <p class="my-2">Lorem ipsum, dolor sit amet conse ctetur adipisi cing elit. ipsum elit txt</p>
                     </div>
@@ -484,16 +468,6 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-12">
-                <div class="property-cities-img">
-                    <img src="assets/images/properties/pc-1.jpg" class="radius mb-30 w-100" alt="img">
-                    <div class="property-city-content color-white">
-                      <h4>San Fancisco</h4>
-                      <p>4 Properties</p>
-                   </div>
-                </div>
-            </div>
-
             <div class="col-lg-4 col-md-6">
               <div class="property-cities-img">
                   <img src="assets/images/properties/pc-2.jpg" class="radius mb-30 w-100" alt="img">
@@ -512,6 +486,16 @@
               </div>
           </div>
 
+          <div class="col-lg-4 col-md-12">
+            <div class="property-cities-img">
+                <img src="assets/images/properties/pc-1.jpg" class="radius mb-30 w-100" alt="img">
+                <div class="property-city-content color-white">
+                  <h4>San Fancisco</h4>
+                  <p>4 Properties</p>
+               </div>
+            </div>
+        </div>
+
           <div class="col-lg-4 col-md-6">
               <div class="property-cities-img">
                   <img src="assets/images/properties/pc-4.jpg" class="radius mb-30 w-100" alt="img">
@@ -528,6 +512,7 @@
                   </div>
               </div>
           </div>
+
         </div>
     </div>
 </section>
@@ -613,28 +598,27 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
                         <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">Limited</p>
-                        <p class="featured-property-box4-featured-tag">Featured</p>
-                        <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <p class="featured-property-box-tag">Limited</p>
+                        <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Decorated Flats</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Decorated Flats</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 4</p>
                             <p class="mx-2">Baths: 2</p>
                             <p>Sq. ft: 5230</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="featured-property-box4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Ali Asif</p>
                             </div>
                             <p class="w-100 align text-right">3 Days Ago</p>
@@ -644,27 +628,27 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
-                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">On Rent</p>
-                        <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">On Rent</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Luxury Villa</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Luxury Villa</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 3</p>
                             <p class="mx-2">Baths: 1</p>
                             <p>Sq. ft: 5000</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="featured-property-box4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Nomi Vin</p>
                             </div>
                             <p class="w-100 align text-right">9 Days Ago</p>
@@ -674,27 +658,27 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
                         <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">For Sale</p>
-                        <p class="featured-property-box4-price">$17,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <p class="featured-property-box-tag">For Sale</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Laurel Rooms</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Laurel Rooms</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 5</p>
                             <p class="mx-2">Baths: 2</p>
                             <p>Sq. ft: 5320</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="featured-property-box4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">John Doe</p>
                             </div>
                             <p class="w-100 align text-right">7 Days Ago</p>
@@ -704,28 +688,27 @@
             </div>
             
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
                         <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">Limited</p>
-                        <p class="featured-property-box4-featured-tag">Featured</p>
-                        <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <p class="featured-property-box-tag">Limited</p>
+                        <p class="featured-property-box-price">$13,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Decorated Flats</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Decorated Flats</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 4</p>
                             <p class="mx-2">Baths: 2</p>
                             <p>Sq. ft: 5230</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="featured-property-box4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Ali Asif</p>
                             </div>
                             <p class="w-100 align text-right">3 Days Ago</p>
@@ -735,27 +718,27 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
-                        <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">On Rent</p>
-                        <p class="featured-property-box4-price">$13,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
+                        <img src="assets/images/blogs/2.jpg" class="radius w-100" alt="img">
+                        <p class="featured-property-box-tag">On Rent</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Luxury Villa</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Luxury Villa</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 3</p>
                             <p class="mx-2">Baths: 1</p>
                             <p>Sq. ft: 5000</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="featured-property-box4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="featured-property-box-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Nomi Vin</p>
                             </div>
                             <p class="w-100 align text-right">9 Days Ago</p>
@@ -765,27 +748,27 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="featured-property-box4 mb-30">
-                    <div class="featured-property-box4-img relative">
+                <div class="featured-property-box mb-30">
+                    <div class="featured-property-box-img relative">
                         <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
-                        <p class="featured-property-box4-tag">For Sale</p>
-                        <p class="featured-property-box4-price">$17,000<small>/mo</small></p>
-                        <a href="#" class="featured-property-box4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="featured-property-box4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <p class="featured-property-box-tag">For Sale</p>
+                        <p class="featured-property-box-price">$17,000<small>/mo</small></p>
+                        <a href="#" class="featured-property-box-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="featured-property-box-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="featured-property-box4-textarea pt-3">
+                    <div class="featured-property-box-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="featured-property-box4-heading">Laurel Rooms</a>
+                        <a href="grid-v4.html" class="featured-property-box-heading">Laurel Rooms</a>
                         <p class="my-1"><i class="fal fa-map-marker-alt mr-2"></i>Dummy area street 1243</p>
-                        <div class="featured-property-box4-specs d-flex">
+                        <div class="featured-property-box-specs d-flex">
                             <p>Beds: 5</p>
                             <p class="mx-2">Baths: 2</p>
                             <p>Sq. ft: 5320</p>
                         </div>
-                        <div class="featured-property-box4-footer d-flex justify-content-between">
-                            <div class="blog4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="featured-property-box-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">John Doe</p>
                             </div>
                             <p class="w-100 align text-right">7 Days Ago</p>
@@ -796,7 +779,7 @@
 
             <div class="col-12">
                 <div class="all-properties-btn text-center">
-                    <a href="grid-v1.html" class="btn">See More</a>
+                    <a href="blogs-grid.html" class="btn">See More</a>
                 </div>
             </div>
         </div>
@@ -835,20 +818,22 @@
                             <img src="assets/images/team/1.jpg" class="w-100" alt="img">
                         </div>
                         <div class="team-textarea px-2 mt-4">
-                            <h4>Lily Bicharm</h4>
-                            <p>Realtor</p>
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Lily Bicharm</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
                             <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
-                            <div class="team-icons d-flex">
-                                <div class="team-social-icons w-100">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-linkedin-in"></i></span>
-                                </div>
-                                <div class="team-contact-icons w-100 text-right">
-                                    <span><i class="fas fa-envelope"></i></span>
-                                    <span><i class="fas fa-phone-alt"></i></span>
-                                </div>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
                             </div>
                         </div>
                     </div>
@@ -860,20 +845,22 @@
                             <img src="assets/images/team/2.jpg" class="w-100" alt="img">
                         </div>
                         <div class="team-textarea px-2 mt-4">
-                            <h4>Jack London</h4>
-                            <p>Realtor</p>
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Jack London</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
                             <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
-                            <div class="team-icons d-flex">
-                                <div class="team-social-icons w-100">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-linkedin-in"></i></span>
-                                </div>
-                                <div class="team-contact-icons w-100 text-right">
-                                    <span><i class="fas fa-envelope"></i></span>
-                                    <span><i class="fas fa-phone-alt"></i></span>
-                                </div>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
                             </div>
                         </div>
                     </div>
@@ -885,20 +872,22 @@
                             <img src="assets/images/team/3.jpg" class="w-100" alt="img">
                         </div>
                         <div class="team-textarea px-2 mt-4">
-                            <h4>Denis Albo</h4>
-                            <p>Realtor</p>
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h4>Denis Albo</h4>
+                                    <p>Realtor</p>
+                                </div>
+                                <div class="team-contact-icons w-50 text-right">
+                                    <a href="mailto:info@dummy.org"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:111222333"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
                             <p class="my-3">Whether it is working with a first time homebuyer, a luxury home listing or a seasoned inv.</p>
-                            <div class="team-icons d-flex">
-                                <div class="team-social-icons w-100">
-                                    <span><i class="fab fa-facebook-f"></i></span>
-                                    <span><i class="fab fa-instagram"></i></span>
-                                    <span><i class="fab fa-twitter"></i></span>
-                                    <span><i class="fab fa-linkedin-in"></i></span>
-                                </div>
-                                <div class="team-contact-icons w-100 text-right">
-                                    <span><i class="fas fa-envelope"></i></span>
-                                    <span><i class="fas fa-phone-alt"></i></span>
-                                </div>
+                            <div class="team-icons">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <span><i class="fab fa-instagram"></i></span>
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-linkedin-in"></i></span>
                             </div>
                         </div>
                     </div>
@@ -924,7 +913,6 @@
                             <h4>William Blake</h4>
                             <p>ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            <span class="testimonial-quote-right"><i class="fad fa-quote-right"></i></span>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
 
@@ -933,7 +921,6 @@
                             <h4>Illina D'Cruz</h4>
                             <p>ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            <span class="testimonial-quote-right"><i class="fad fa-quote-right"></i></span>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
 
@@ -942,7 +929,6 @@
                             <h4>John Doe</h4>
                             <p>ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            <span class="testimonial-quote-right"><i class="fad fa-quote-right"></i></span>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
                     </div>
@@ -964,20 +950,20 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="blog4 mb-30">
-                    <div class="blog4-img relative">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
                         <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="blog4-textarea pt-3">
+                    <div class="blog-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="blog4-heading">This is a standard post</a>
+                        <a href="grid-v4.html" class="blog-heading">This is a standard post</a>
                         <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
-                        <div class="blog4-footer d-flex justify-content-between">
-                            <div class="blog4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Ali Asif</p>
                             </div>
                             <p class="w-100 align text-right">3 Days Ago</p>
@@ -987,20 +973,20 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="blog4 mb-30">
-                    <div class="blog4-img relative">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
                         <img src="assets/images/blogs/1.jpg" class="radius w-100" alt="img">
-                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
 
-                    <div class="blog4-textarea pt-3">
+                    <div class="blog-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="blog4-heading">Luxury Villa at low Price</a>
+                        <a href="grid-v4.html" class="blog-heading">Luxury Villa at low Price</a>
                         <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
-                        <div class="blog4-footer d-flex justify-content-between">
-                            <div class="blog4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">Nomi Vin</p>
                             </div>
                             <p class="w-100 align text-right">9 Days Ago</p>
@@ -1010,19 +996,19 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="blog4 mb-30">
-                    <div class="blog4-img relative">
+                <div class="blog mb-30">
+                    <div class="blog-img relative">
                         <img src="assets/images/blogs/3.jpg" class="radius w-100" alt="img">
-                        <a href="#" class="blog4-share-icon"><i class="fad fa-exchange-alt"></i></a>
-                        <a href="#" class="blog4-heart-icon"><i class="fal fa-heart"></i></a>
+                        <a href="#" class="blog-share-icon"><i class="fad fa-exchange-alt"></i></a>
+                        <a href="#" class="blog-heart-icon"><i class="fal fa-heart"></i></a>
                     </div>
-                    <div class="blog4-textarea pt-3">
+                    <div class="blog-textarea pt-3">
                         <p class="color-red">Apartment</p>
-                        <a href="grid-v4.html" class="blog4-heading">Neat and Clean Rooms</a>
+                        <a href="grid-v4.html" class="blog-heading">Neat and Clean Rooms</a>
                         <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis culpa odio? Aliquid qui, odit officia nemo iste <a href="single-post.html">Read More</a></p>
-                        <div class="blog4-footer d-flex justify-content-between">
-                            <div class="blog4-user d-flex w-100">
-                                <img src="assets/images/blog4-user.png" alt="img">
+                        <div class="blog-footer d-flex justify-content-between">
+                            <div class="blog-user d-flex w-100">
+                                <img src="assets/images/blog-user.png" alt="img">
                                 <p class="align ml-1">John Doe</p>
                             </div>
                             <p class="w-100 align text-right">7 Days Ago</p>
@@ -1032,7 +1018,7 @@
             </div>
             <div class="col-12">
                 <div class="blogs-btn text-center">
-                    <a href="blogs-list1.html" class="btn">See More</a>
+                    <a href="blogs-list.html" class="btn">See More</a>
                 </div>
             </div>
         </div>
@@ -1094,8 +1080,8 @@
                         <div class="footer-list">
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>                               
-                                <li><a href="index.html#our-properties">Properties</a></li>                               
-                                <li><a href="index.html#team2">Our Team</a></li>                               
+                                <li><a href="index.html#our-properites">Properties</a></li>                               
+                                <li><a href="index.html#team">Our Team</a></li>                               
                                 <li><a href="index.html#articles">Articles</a></li>                               
                                 <li><a href="contact-page.html">Contact</a></li>                                                                                   
                             </ul>
