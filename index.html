@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="FINDINN - A Responsive Real Estate HTML Template">
-    <meta name="author" content="codeglamor">
+    <meta name="author" content="TeamEssential">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FINDINN - A Responsive Real Estate HTML Template</title>
     <!--Favicon-->
@@ -80,8 +80,12 @@
                   <li class="nav-item">
                     <a class="nav-link" href="blogs-grid.html">Properties</a>
                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blogs-list.html">Blogs</a>
+                  <li class="nav-item drpdwn-item">
+                    <span class="nav-link">Blogs</span>
+                    <ul class="drpdwn-menu">
+                        <li class="drpdwn-link"><a class="nav-link" href="blog-grid.html">Blogs Grid</a></li>
+                        <li class="drpdwn-link"><a class="nav-link" href="blogs-list.html">Blogs List</a></li>
+                    </ul>
                 </li>
                   <li class="nav-item">
                       <a class="nav-link" href="index.html#testimonial">Testimonials</a>
@@ -138,6 +142,7 @@
                   <div class="col-lg-2 col-md-4 col-sm-6">
                       <div class="pages-search-box-input">
                           <select name="property-type" id="property-type" class="w-100" required>
+                              <option value="">Select One</option>
                               <option value="apartment">Apartment</option>
                               <option value="bungalow">Bungalow</option>
                               <option value="house">House</option>
@@ -160,6 +165,7 @@
                   <div class="col-lg-2 col-md-4 col-sm-6">
                       <div class="pages-search-box-input">
                           <select name="search-property-purpose" id="search-property-purpose" class="w-100" required>
+                              <option value="">Select One</option>
                               <option value="buy">Buy</option>
                               <option value="on rent">On Rent</option>
                           </select>
@@ -783,7 +789,7 @@
 
             <div class="col-12">
                 <div class="all-properties-btn text-center">
-                    <a href="blogs-grid.html" class="btn">See More</a>
+                    <a href="property-grid.html" class="btn">See More</a>
                 </div>
             </div>
         </div>
@@ -912,26 +918,26 @@
                     </div>
 
                     <div id="testimonial-carousel" class="owl-carousel owl-theme">
-                        <div class="testimonial-box text-center relative">
+                        <div class="testimonial-box text-center relative bg-white">
                             <img src="assets/images/img-1.jpg" class="testimonial-img rounded-circle" alt="img">
                             <h4>William Blake</h4>
-                            <p>ENGINEER</p>
+                            <p class="text-muted small">ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
 
-                        <div class="testimonial-box text-center relative">
+                        <div class="testimonial-box text-center relative bg-white">
                             <img src="assets/images/img-2.jpg" class="testimonial-img rounded-circle" alt="img">
                             <h4>Illina D'Cruz</h4>
-                            <p>ENGINEER</p>
+                            <p class="text-muted small">ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
 
-                        <div class="testimonial-box text-center relative">
+                        <div class="testimonial-box text-center relative bg-white">
                             <img src="assets/images/img-3.jpg" class="testimonial-img rounded-circle" alt="img">
                             <h4>John Doe</h4>
-                            <p>ENGINEER</p>
+                            <p class="text-muted small">ENGINEER</p>
                             <p class="mt-3 testimonial-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                             <span class="testimonial-quote-left"><i class="fad fa-quote-left"></i></span>
                         </div>
@@ -1022,7 +1028,7 @@
             </div>
             <div class="col-12">
                 <div class="blogs-btn text-center">
-                    <a href="blogs-list.html" class="btn">See More</a>
+                    <a href="blog-grid.html" class="btn">See More</a>
                 </div>
             </div>
         </div>
@@ -1113,7 +1119,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer-map mb-50">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26953876.145024687!2d86.01208830043713!3d34.44534209696999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2s!4v1613370882898!5m2!1sen!2s"  height="200" frameborder="0" style="border:0; width: 100%; margin-bottom: -6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26953876.145024687!2d86.01208830043713!3d34.44534209696999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2s!4v1613370882898!5m2!1sen!2s"  height="200" style="border:0; width: 100%; margin-bottom: -6px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
        
@@ -1128,7 +1134,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="lower-footer-copyright-area">
-                            <p>© 2021 All Rights Reserved by <a href="#">FINDINN</a></p>
+                            <p>© 2021 All Rights Reserved by <a href="#">Estlo</a></p>
                         </div>
                     </div>
 
