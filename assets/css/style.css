@@ -372,7 +372,12 @@ a:hover{
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
+.home-main-banner-text-area h1{
+  font-weight: 600;
+}
+.home-main-banner-text-area2 h1{
+  font-weight: 600;
+}
 /*======================================
  ========== Property Cities CSS ========
  ======================================= */
