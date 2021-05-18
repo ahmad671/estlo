@@ -174,8 +174,5 @@ $("#featured-properties-carousel").owlCarousel({
 	$('#myInput').trigger('focus')
   })
   
-  function yearfunc(){
-	document.write(new Date().getFullYear());
-  }
 
 })(jQuery);

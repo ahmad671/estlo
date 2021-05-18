@@ -182,14 +182,12 @@
   @media only screen and (max-width:991px){
     .nav-btn{
       margin-left: 0!important;
-      padding-bottom: 10px;
     }
     .nav-btn .btn{
       width: 100%;
       background-color: #fff;
       color: var(--blue);
       border-color: var(--blue);
-      margin-bottom: 15px;
     }
     .navbar{
       background-color: var(--blue);
@@ -204,7 +202,7 @@
       padding: 0 30px;
     }
     .home-main-banner{
-      margin-top: -68px;
+      margin-top: -84px;
     }
   }
 
